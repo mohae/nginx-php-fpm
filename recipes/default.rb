@@ -21,6 +21,6 @@ template "php-fpm.inc" do
   only_if "yum list | grep php-fpm"
 end
 
-service "php5-fpm" do
+service "php-fpm" do
   action :start
 end  
