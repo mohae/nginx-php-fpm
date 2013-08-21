@@ -18,7 +18,7 @@ template "php-fpm.inc" do
   group "root"
   mode 0644
   action :create
-  only_if "dpkg --get-selections | grep php5-fpm"
+  only_if "yum list | grep php-fpm"
 end
 
 service "php5-fpm" do
