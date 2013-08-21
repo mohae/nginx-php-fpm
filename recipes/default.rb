@@ -6,7 +6,7 @@
 #
 
 # install the php-fpm package
-package "php5-fpm" do
+package "php-fpm" do
   action :install
 end
 
